@@ -1,0 +1,87 @@
+<?php
+use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
+use app\assets\AppAsset;
+
+/* @var $this \yii\web\View */
+/* @var $content string */
+AppAsset::register($this);
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Coco - Responsive Bootstrap Template</title>  
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="coco bootstrap template, coco admin, bootstrap,admin template, bootstrap admin,">
+        <meta name="author" content="Huban Creative">
+
+        <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/pace/pace.css" rel="stylesheet" />
+        <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/animate-css/animate.min.css" rel="stylesheet" />
+        <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/iconmoon/style.css" rel="stylesheet" />
+
+        <!-- LESS FILE <link href="assets/css/style.less" rel="stylesheet/less" type="text/css" /> -->
+                <!-- Extra CSS Libraries Start -->
+                <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+                <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+                <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+                <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/jquery-magnific/magnific-popup.css" rel="stylesheet" type="text/css" />
+                <link href="<?= Yii::$app->view->theme->baseUrl?>/assets/css/style.css" rel="stylesheet" type="text/css" />
+                <!-- Extra CSS Libraries End -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/favicon.ico">
+        <link rel="apple-touch-icon" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="<?= Yii::$app->view->theme->baseUrl?>/assets/img/apple-touch-icon-152x152.png" />    
+    </head>
+    <body class="">
+	<?php $this->beginBody() ?>
+	<div id="wrapper">    
+		<header>
+			<?php echo yii\base\View::render('//layouts/f_header');?>
+		</header>
+            	<?= $content ?>	
+		<footer>
+		    <div class="container">
+		        <?php echo yii\base\View::render('/layouts/f_footer');?>
+		    </div>
+		</footer>
+        <a class="tothetop" href="javascript:;"><i class="icon-angle-up"></i></a>
+    </div>
+
+    <script>
+        var resizefunc = [];
+    </script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/less-js/less-1.7.5.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/pace/pace.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/jquery-browser/jquery.browser.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/fastclick/fastclick.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/stellarjs/jquery.stellar.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/jquery-appear/jquery.appear.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/js/init.js"></script>
+    <!-- Page Specific JS Libraries -->
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/libs/jquery-magnific/jquery.magnific-popup.min.js"></script>
+    <script src="<?= Yii::$app->view->theme->baseUrl?>/assets/js/pages/index.js"></script>
+    <!-- Page Specific JS Libraries End -->
+    </body>
+</html>
